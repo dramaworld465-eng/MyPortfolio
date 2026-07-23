@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Header</title>
+
+<!-- Professional Font Combo -->
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    background: #0d0d0d;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Headings Professional Font */
+h1,h2,h3,.logo{
+    font-family: 'Sora', sans-serif;
+}
+
+/* Wrapper */
+.navbar-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navbar */
+.navbar {
+    width: 80%;
+    border-radius: 60px;
+    padding: 18px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(17, 17, 17, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 94, 0, 0.25);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease;
+}
+
+/* Logo Gradient */
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #ff2d00, #ff7a00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+}
+
+/* Nav Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff5e00;
+}
+</style>
+
+<header class="navbar-wrapper">
+    <nav class="navbar">
+        <div class="logo">SYED ABDULLAH BIN ABID</div>
+        <ul class="nav-links">
+            <li><a href="#aboutDeveloper">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<style>
+
+body{
+    margin:0;
+    background:#0b0b0b;
+    font-family: 'Inter', sans-serif;
+    color:white;
+}
+
+/* Section Wrapper */
+.hero-wrapper{
+    display:flex;
+    justify-content:center;
+    padding:40px 20px;
+}
+
+/* Glass Container */
+.hero{
+    width:80%;
+    background:linear-gradient(145deg,#0f0f0f,#0a0a0a);
+    border-radius:30px;
+    padding:40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border:1px solid rgba(255,100,0,0.2);
+    box-shadow:0 0 40px rgba(255,80,0,0.08);
+}
+
+/* LEFT SIDE */
+.hero-left{
+    max-width:520px;
+}
+
+/* Small Badge */
+.badge{
+    display:inline-block;
+    padding:6px 16px;
+    border-radius:30px;
+    border:1px solid rgba(255,120,0,0.4);
+    color:#ff7a00;
+    font-size:12px;
+    letter-spacing:1px;
+    margin-bottom:20px;
+}
+
+/* Heading */
+.hero h1{
+    font-size:52px;
+    line-height:1.1;
+    margin:0;
+    font-weight:700;
+}
+
+/* Gradient Text */
+.hero h1 span{
+    background:linear-gradient(90deg,#ff2d00,#ff7a00);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* Paragraph */
+.hero p{
+    color:#aaa;
+    font-size:16px;
+    margin:20px 0 30px 0;
+    line-height:1.6;
+}
+
+/* Buttons */
+.btn-group{
+    display:flex;
+    gap:15px;
+}
+
+.btn-primary{
+    background:linear-gradient(90deg,#ff2d00,#ff7a00);
+    padding:14px 26px;
+    border-radius:40px;
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    box-shadow:0 0 20px rgba(255,80,0,0.3);
+    transition:0.3s ease;
+}
+
+.btn-primary:hover{
+    transform:translateY(-4px) scale(1.05);
+    box-shadow:0 0 35px rgba(255,80,0,0.6);
+}
+
+.btn-secondary{
+    padding:14px 26px;
+    border-radius:40px;
+    text-decoration:none;
+    color:#ddd;
+    border:1px solid rgba(255,255,255,0.2);
+    background:transparent;
+    transition:0.3s ease;
+}
+
+.btn-secondary:hover{
+    background:rgba(255,255,255,0.08);
+    transform:translateY(-4px);
+    border-color:#ff7a00;
+}
+
+/* RIGHT IMAGE */
+.hero-right{
+    position:relative;
+}
+
+.image-frame{
+    width:300px;
+    height:380px;
+    border-radius:25px;
+    padding:5px;
+    background:linear-gradient(180deg,#ff2d00,#ff7a00);
+    box-shadow:0 0 35px rgba(255,60,0,0.4);
+    overflow:hidden;
+}
+
+.image-frame img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:20px;
+    background:#111;
+    transition:transform 4s ease-in-out;
+}
+</style>
+
+<section class="hero-wrapper">
+    <div class="hero">
+
+        <div class="hero-left">
+            <div class="badge">✦ WEB DEVELOPER · CREATIVE TECHNOLOGIST</div>
+
+            <h1>
+                Crafting Digital<br>
+                <span>Experiences</span>
+            </h1>
+
+            <p>
+                I blend <span style="color:#ff7a00;">clean code</span> 
+                with <span style="color:#ff3c00;">bold design</span> 
+                to build immersive, high-performance web solutions that stand out.
+            </p>
+
+            <div class="btn-group">
+                <a href="#" class="btn-primary">View My Projects</a>
+                <a href="#" class="btn-secondary">Let's Connect</a>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="image-frame">
+                <img src="" alt="" id="zoomImage">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script>
+const img = document.getElementById("zoomImage");
+
+let zoomed = false;
+
+setInterval(() => {
+    if(zoomed){
+        img.style.transform = "scale(1)";
+        zoomed = false;
+    } else {
+        img.style.transform = "scale(1.1)";
+        zoomed = true;
+    }
+}, 4000);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+body{
+    background:#0b0b0b;
+    font-family:'Inter', sans-serif;
+    color:#fff;
+    margin:0;
+}
+
+/* Complete About Section Wrapper */
+.about-dev-wrapper{
+    display:flex;
+    justify-content:center;
+    padding:80px 20px;
+}
+
+/* Main About Section */
+.about-dev-section{
+    width:85%;
+    box-sizing:border-box;
+    background:linear-gradient(145deg,#0f0f0f,#0a0a0a);
+    border-radius:30px;
+    padding:55px 50px;
+    border:1px solid rgba(255,80,0,0.25);
+    box-shadow:0 0 40px rgba(255,80,0,0.08);
+}
+
+/* Top About Heading */
+.about-header{
+    text-align:center;
+    margin-bottom:55px;
+}
+
+.about-header h2{
+    margin:0 0 20px;
+    font-family:'Sora', sans-serif;
+    font-size:38px;
+    font-weight:800;
+    line-height:1;
+    letter-spacing:-1px;
+    color:#fff;
+}
+
+.about-header h2 span{
+    color:#ff5e00;
+}
+
+.about-header p{
+    max-width:680px;
+    margin:0 auto;
+    color:#8e8c91;
+    font-size:16px;
+    font-weight:400;
+    line-height:1.7;
+}
+
+/* Inner Content: Image + Text */
+.about-dev-content{
+    display:flex;
+    gap:60px;
+    align-items:center;
+}
+
+/* LEFT IMAGE */
+.dev-left{
+    flex:1;
+}
+
+.dev-left img{
+    width:100%;
+    height:500px;
+    display:block;
+    box-sizing:border-box;
+    object-fit:cover;
+    border-radius:15px;
+    background:#111;
+    border:2px solid rgba(255,80,0,0.45);
+    box-shadow:0 0 25px rgba(255,80,0,0.18);
+    transition:transform 0.45s ease, box-shadow 0.45s ease;
+}
+
+/* Image Hover */
+.dev-left img:hover{
+    transform:translateY(-8px) scale(1.02);
+    box-shadow:0 15px 35px rgba(255,80,0,0.28);
+}
+
+/* RIGHT CONTENT */
+.dev-right{
+    flex:1;
+}
+
+.dev-right h3{
+    font-family:'Sora', sans-serif;
+    font-size:28px;
+    margin:0 0 20px;
+    font-weight:700;
+    color:#fff;
+}
+
+.dev-right h3 span{
+    color:#ff5e00;
+}
+
+.dev-right p{
+    font-size:14px;
+    color:#999;
+    line-height:1.8;
+    margin:0 0 15px;
+}
+
+/* Skills Grid */
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px 40px;
+    margin-top:30px;
+}
+
+/* Each Skill */
+.skill-item{
+    width:100%;
+}
+
+.skill-top{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:8px;
+}
+
+.skill-name{
+    font-size:13px;
+    color:#ccc;
+    font-weight:600;
+}
+
+.skill-percent{
+    font-size:13px;
+    color:#ccc;
+}
+
+/* Progress Bar Background */
+.skill-bar{
+    width:100%;
+    height:6px;
+    background:#1a1a1a;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+/* Progress Fill */
+.skill-fill{
+    height:100%;
+    width:0%;
+    border-radius:10px;
+    background:linear-gradient(90deg,#ff2d00,#ff7a00);
+    transition:width 1.5s ease;
+}
+
+/* Section Entry Animation */
+.about-dev-section{
+    animation:sectionAppear 0.8s ease both;
+}
+
+@keyframes sectionAppear{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Tablet */
+@media(max-width:900px){
+    .about-dev-section{
+        width:90%;
+        padding:45px 30px;
+    }
+
+    .about-dev-content{
+        gap:35px;
+    }
+
+    .dev-left img{
+        height:420px;
+    }
+}
+
+/* Mobile */
+@media(max-width:650px){
+    .about-dev-wrapper{
+        padding:50px 15px;
+    }
+
+    .about-dev-section{
+        width:100%;
+        padding:35px 20px;
+        border-radius:24px;
+    }
+
+    .about-header{
+        margin-bottom:40px;
+    }
+
+    .about-header h2{
+        font-size:32px;
+    }
+
+    .about-header p{
+        font-size:14px;
+    }
+
+    .about-dev-content{
+        flex-direction:column;
+        gap:35px;
+    }
+
+    .dev-left,
+    .dev-right{
+        width:100%;
+    }
+
+    .dev-left img{
+        height:400px;
+    }
+
+    .dev-right h3{
+        font-size:25px;
+    }
+
+    .skills-grid{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+}
+</style>
+
+
+<section class="about-dev-wrapper">
+    <div class="about-dev-section" id="aboutDeveloper">
+
+        <!-- About Heading -->
+        <div class="about-header" >
+            <h2>About <span>Me</span></h2>
+
+            <p>
+                Passionate developer with a focus on clean code and great user<br>
+                experiences.
+            </p>
+        </div>
+
+        <div class="about-dev-content">
+
+            <!-- LEFT IMAGE -->
+            <div class="dev-left">
+                <img src="" alt="Developer Photo">
+            </div>
+
+            <!-- RIGHT CONTENT -->
+            <div class="dev-right">
+                <h3>Frontend <span>Web Developer</span></h3>
+
+                <p>
+                    I am a passionate Frontend Web Developer focused on building modern,
+                    responsive, and high-performance websites. I enjoy transforming ideas
+                    into real-world digital experiences using clean and efficient code.
+                </p>
+
+                <p>
+                    I specialize in frontend technologies like HTML, CSS, JavaScript, and
+                    Bootstrap, along with backend development using PHP and WordPress for
+                    building dynamic and scalable web applications that deliver results.
+                </p>
+
+                <!-- Skills -->
+                <div class="skills-grid">
+
+                    <div class="skill-item">
+                        <div class="skill-top">
+                            <span class="skill-name">HTML</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="95"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-top">
+                            <span class="skill-name">CSS</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-top">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="85"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-top">
+                            <span class="skill-name">PHP</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="80"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-top">
+                            <span class="skill-name">Elementor</span>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="70"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-top">
+                            <span class="skill-name">WordPress</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="85"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<script>
+const aboutDeveloper = document.getElementById("aboutDeveloper");
+const skillFills = aboutDeveloper.querySelectorAll(".skill-fill");
+
+const skillsObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            skillFills.forEach((bar) => {
+                bar.style.width = bar.getAttribute("data-width") + "%";
+            });
+
+            skillsObserver.unobserve(aboutDeveloper);
+        }
+    });
+}, {
+    threshold:0.35
+});
+
+skillsObserver.observe(aboutDeveloper);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Font Awesome (icons ke liye head me add karein) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+body{
+    background:#0b0b0b;
+    font-family:'Inter', sans-serif;
+    color:#fff;
+}
+
+/* Wrapper */
+.tech-wrapper{
+    display:flex;
+    justify-content:center;
+    padding:80px 20px;
+}
+
+/* Main Container */
+.tech-section{
+    width:85%;
+    max-width:1200px;
+    box-sizing:border-box;
+    background:linear-gradient(145deg,#0f0f0f,#0a0a0a);
+    border-radius:30px;
+    padding:60px;
+    border:1px solid rgba(255,80,0,0.3);
+}
+
+/* Heading */
+.tech-section h2{
+    font-size:42px;
+    margin:0;
+    font-weight:700;
+}
+
+.tech-section h2 span{
+    background:linear-gradient(90deg,#ff2d00,#ff7a00);
+    -webkit-background-clip : text;
+    -webkit-text-fill-color:transparent;
+}
+
+.underline{
+    width:60px;
+    height:3px;
+    background:#ff5e00;
+    margin:20px 0 50px 0;
+}
+
+/* Grid - Bootstrap remove hone ki wajah se 5 columns */
+.tech-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:30px;
+}
+
+/* Cards */
+.tech-card{
+    min-height:130px;
+    box-sizing:border-box;
+    background:rgba(255,255,255,0.03);
+    border-radius:20px;
+    padding:40px 20px;
+    text-align:center;
+    border:1px solid rgba(255,120,0,0.1);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    transition:0.3s ease;
+}
+
+.tech-card:hover{
+    transform:translateY(-8px);
+    border-color:rgba(255,80,0,0.5);
+}
+
+/* Icons */
+.tech-card i{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+/* Specific Colors */
+.wordpress{color:#21759b;}
+.html{color:#e34c26;}
+.css{color:#264de4;}
+.js{color:#f0db4f;}
+.php{color:#8892be;}
+
+.tech-card p{
+    margin:0;
+    font-size:15px;
+    color:#ccc;
+}
+
+/* Tablet Responsive */
+@media(max-width:900px){
+    .tech-section{
+        width:90%;
+        padding:40px 30px;
+    }
+
+    .tech-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+/* Mobile Responsive */
+@media(max-width:550px){
+    .tech-wrapper{
+        padding:50px 15px;
+    }
+
+    .tech-section{
+        width:100%;
+        padding:30px 20px;
+        border-radius:24px;
+    }
+
+    .tech-section h2{
+        font-size:34px;
+    }
+
+    .tech-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
+    }
+
+    .tech-card{
+        min-height:135px;
+        padding:25px 10px;
+    }
+
+    .tech-card i{
+        font-size:36px;
+    }
+}
+</style>
+
+
+<section class="tech-wrapper" id="skills">
+    <div class="tech-section">
+
+        <h2>Tech <span>Stack</span></h2>
+        <div class="underline"></div>
+
+        <div class="tech-grid">
+
+            <div class="tech-card">
+                <i class="fa-brands fa-wordpress wordpress"></i>
+                <p>WordPress</p>
+            </div>
+
+            <div class="tech-card">
+                <i class="fa-brands fa-html5 html"></i>
+                <p>HTML5</p>
+            </div>
+
+            <div class="tech-card">
+                <i class="fa-brands fa-css3-alt css"></i>
+                <p>CSS3</p>
+            </div>
+
+            <div class="tech-card">
+                <i class="fa-brands fa-js js"></i>
+                <p>JavaScript</p>
+            </div>
+
+            <div class="tech-card">
+                <i class="fa-brands fa-php php"></i>
+                <p>PHP</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Font Awesome (agar pehle add nahi kiya to add karein) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+body{
+    background:#0b0b0b;
+    font-family:'Inter', sans-serif;
+    color:#fff;
+}
+
+/* Wrapper */
+.services-wrapper{
+    display:flex;
+    justify-content:center;
+    padding:80px 20px;
+}
+
+/* Main Section */
+.services-section{
+    width:85%;
+    max-width:1200px;
+    box-sizing:border-box;
+    background:linear-gradient(145deg,#0f0f0f,#0a0a0a);
+    border-radius:30px;
+    padding:60px 48px;
+    border:1px solid rgba(255,80,0,0.3);
+    box-shadow:0 0 40px rgba(255,80,0,0.05);
+}
+
+/* Heading */
+.services-section h2{
+    margin:0;
+    color:#f4efeb;
+    font-size:42px;
+    font-weight:700;
+    letter-spacing:-1px;
+}
+
+.services-section h2 span{
+    background:linear-gradient(90deg,#ff2d00,#ff7a00);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* Orange underline */
+.services-underline{
+    width:60px;
+    height:3px;
+    margin:20px 0 38px;
+    border-radius:10px;
+    background:linear-gradient(90deg,#ff2d00,#ff7a00);
+}
+
+/* Cards Grid */
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+/* Service Card */
+.service-card{
+    min-height:250px;
+    box-sizing:border-box;
+    padding:48px 28px 32px;
+    border-radius:20px;
+    background:#1e1713;
+    border:1px solid rgba(255,150,100,0.12);
+    cursor:pointer;
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease,
+        background 0.35s ease;
+}
+
+/* Cursor card par jaye to card upar jayega */
+.service-card:hover{
+    transform:translateY(-14px);
+    background:#251a15;
+    border-color:rgba(255,95,35,0.48);
+    box-shadow:0 20px 35px rgba(0,0,0,0.35),
+               0 0 25px rgba(255,80,0,0.10);
+}
+
+/* Icon */
+.service-icon{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:30px;
+    font-size:44px;
+    transition:transform 0.35s ease, filter 0.35s ease;
+}
+
+/* Icon animation on card hover */
+.service-card:hover .service-icon{
+    transform:translateY(-7px) scale(1.12) rotate(-4deg);
+    filter:drop-shadow(0 8px 10px rgba(255,150,0,0.22));
+}
+
+/* Colors */
+.web-icon{
+    color:#4fc3f7;
+}
+
+.design-icon{
+    color:#ffb74d;
+}
+
+.seo-icon{
+    color:#ffd54f;
+}
+
+/* Title */
+.service-card h3{
+    margin:0 0 14px;
+    color:#f5f1ed;
+    font-size:21px;
+    font-weight:700;
+}
+
+/* Description */
+.service-card p{
+    margin:0;
+    color:#b4aaa4;
+    font-size:15px;
+    line-height:1.6;
+}
+
+/* Tablet */
+@media(max-width:900px){
+    .services-section{
+        width:90%;
+        padding:45px 30px;
+    }
+
+    .services-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+/* Mobile */
+@media(max-width:600px){
+    .services-wrapper{
+        padding:50px 15px;
+    }
+
+    .services-section{
+        width:100%;
+        padding:32px 20px;
+        border-radius:24px;
+    }
+
+    .services-section h2{
+        font-size:34px;
+    }
+
+    .services-grid{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+
+    .service-card{
+        min-height:auto;
+        padding:35px 25px;
+    }
+}
+</style>
+
+
+<section class="services-wrapper">
+    <div class="services-section">
+
+        <h2>What I <span>Offer</span></h2>
+        <div class="services-underline"></div>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <div class="service-icon web-icon">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+
+                <h3>Web Development</h3>
+
+                <p>
+                    Fully responsive, high-performance websites and web apps built
+                    with modern frameworks and clean architecture.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon design-icon">
+                    <i class="fa-solid fa-palette"></i>
+                </div>
+
+                <h3>UI/UX Design</h3>
+
+                <p>
+                    Human-centered design that prioritizes usability, accessibility,
+                    and a seamless visual narrative.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon seo-icon">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+
+                <h3>Performance &amp; SEO</h3>
+
+                <p>
+                    Speed optimization, core web vitals, and search-engine-friendly
+                    structures to get your site discovered.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+body{
+    background:#0b0b0b;
+    font-family:'Inter', sans-serif;
+    margin:0;
+    color:#fff;
+}
+
+/* Wrapper */
+.projects-wrapper{
+    display:flex;
+    justify-content:center;
+    padding:80px 20px;
+}
+
+/* OUTER BOX */
+.projects-outer-box{
+    width:78%;
+    background:linear-gradient(145deg,#0f0f0f,#0a0a0a);
+    border-radius:30px;
+    padding:40px;
+    border:1px solid rgba(255,94,0,0.25);
+    box-shadow:0 0 50px rgba(255,94,0,0.08);
+}
+
+/* Grid Container */
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+/* Card */
+.project-card{
+    background:#111;
+    border-radius:18px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,0.05);
+    transition:0.4s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    border-color:rgba(255,94,0,0.4);
+    box-shadow:0 0 30px rgba(255,94,0,0.15);
+}
+
+/* Image */
+.project-thumb{
+    width:100%;
+    height:230px;
+    overflow:hidden;
+}
+
+.project-thumb img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    background:#1a1a1a;
+    transition:transform 0.5s ease;
+}
+
+.project-card:hover .project-thumb img{
+    transform:scale(1.08);
+}
+
+/* Content */
+.project-content{
+    padding:25px;
+}
+
+.project-content h3{
+    font-size:20px;
+    font-weight:700;
+    margin:0 0 10px 0;
+    color:#fff;
+}
+
+.project-content p{
+    font-size:14px;
+    color:#8a8a8a;
+    line-height:1.6;
+    margin:0 0 22px 0;
+}
+
+/* Orange Button */
+.project-btn{
+    display:inline-block;
+    padding:10px 24px;
+    border-radius:30px;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+    color:#fff;
+    background:linear-gradient(90deg,#ff2d00,#ff7a00);
+    transition:0.3s ease;
+}
+
+.project-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 0 25px rgba(255,94,0,0.5);
+}
+</style>
+
+
+<section class="projects-wrapper" id="Projects">
+
+    <!-- OUTER BOX -->
+    <div class="projects-outer-box">
+
+        <!-- 3 Cards Grid -->
+        <div class="projects-grid">
+
+            <!-- Card 1 -->
+            <div class="project-card">
+                <div class="project-thumb">
+                    <img src="img/images (1).jpg" alt="Business Website">
+                </div>
+                <div class="project-content">
+                    <h3>Business Website</h3>
+                    <p>Modern responsive business website with professional UI design.</p>
+                    <a href="#" class="project-btn">View Project</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="project-card">
+                <div class="project-thumb">
+                    <img src="img/images.jpg" alt="E-Commerce Store">
+                </div>
+                <div class="project-content">
+                    <h3>E-Commerce Store</h3>
+                    <p>Fully responsive online shopping website with clean layout.</p>
+                    <a href="#" class="project-btn">View Project</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="project-card">
+                <div class="project-thumb">
+                    <img src="img/v6fjpkwzg6pxc2p4kan0.webp" alt="Landing Page">
+                </div>
+                <div class="project-content">
+                    <h3>Landing Page</h3>
+                    <p>High conversion landing page for brands and startups.</p>
+                    <a href="#" class="project-btn">View Project</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Font Awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+body{
+    margin:0;
+    background:#0b0b0b;
+    color:#fff;
+    font-family:'Inter', sans-serif;
+}
+
+/* Main Wrapper */
+.contact-wrapper{
+    display:flex;
+    justify-content:center;
+    padding:80px 20px;
+}
+
+/* Contact Section */
+.contact-section{
+    width:85%;
+    box-sizing:border-box;
+    padding:48px;
+    border-radius:30px;
+    background:linear-gradient(145deg,#0f0f0f,#0a0a0a);
+    border:1px solid rgba(255,80,0,0.25);
+    box-shadow:0 0 45px rgba(255,80,0,0.06);
+}
+
+/* Main heading */
+.contact-section > h2{
+    margin:0;
+    color:#f6f0eb;
+    font-family:'Sora', sans-serif;
+    font-size:42px;
+    font-weight:700;
+    letter-spacing:-1px;
+}
+
+.contact-section > h2 span{
+    background:linear-gradient(90deg,#ff2d00,#ff7a00);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* Heading underline */
+.contact-underline{
+    width:60px;
+    height:3px;
+    margin:20px 0 40px;
+    border-radius:10px;
+    background:linear-gradient(90deg,#ff2d00,#ff7a00);
+}
+
+/* Two columns */
+.contact-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:start;
+}
+
+/* Left side heading */
+.contact-left h3{
+    margin:5px 0 22px;
+    color:#f7f2ed;
+    font-family:'Sora', sans-serif;
+    font-size:29px;
+    font-weight:700;
+}
+
+/* Left description */
+.contact-left p{
+    max-width:450px;
+    margin:0 0 32px;
+    color:#b4aaa4;
+    font-size:16px;
+    line-height:1.65;
+}
+
+/* Social links */
+.social-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:16px;
+    justify-content:center;
+}
+
+/* Individual social button */
+.social-link{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:13px 24px;
+    border-radius:30px;
+    text-decoration:none;
+    color:#c6bcb5;
+    background:#211814;
+    border:1px solid rgba(255,150,100,0.12);
+    font-size:14px;
+    font-weight:600;
+    transition:transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-link:hover{
+    transform:translateY(-5px);
+    border-color:rgba(255,80,0,0.55);
+    box-shadow:0 10px 22px rgba(0,0,0,0.30);
+}
+
+/* Social icon size */
+.social-link i{
+    font-size:19px;
+}
+
+/* Icon colors */
+.email-icon{
+    color:#ff4a3e;
+}
+
+.linkedin-icon{
+    color:#0a7eea;
+}
+
+.whatsapp-icon{
+    color:#20cf72;
+}
+
+.facebook-icon{
+    color:#1877f2;
+}
+
+.instagram-icon{
+    color:#e4405f;
+}
+
+/* Form */
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:17px;
+}
+
+/* Inputs and textarea */
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    box-sizing:border-box;
+    border:none;
+    outline:none;
+    color:#eee;
+    background:#241b17;
+    border:1px solid rgba(255,150,100,0.12);
+    border-radius:13px;
+    padding:16px 20px;
+    font-family:'Inter', sans-serif;
+    font-size:15px;
+    transition:border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form textarea{
+    height:140px;
+    resize:vertical;
+}
+
+/* Focus Effect */
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color:rgba(255,90,30,0.70);
+    box-shadow:0 0 0 3px rgba(255,80,0,0.10);
+}
+
+/* Placeholder */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+    color:#7f7672;
+}
+
+/* Send Button */
+.contact-form button{
+    border:none;
+    cursor:pointer;
+    padding:16px 25px;
+    border-radius:35px;
+    color:#120b08;
+    font-family:'Inter', sans-serif;
+    font-size:15px;
+    font-weight:700;
+    background:linear-gradient(90deg,#ff6a35,#ef344a);
+    box-shadow:0 10px 25px rgba(255,75,35,0.22);
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form button:hover{
+    transform:translateY(-4px) scale(1.015);
+    box-shadow:0 15px 32px rgba(255,75,35,0.38);
+}
+
+/* Entry animation */
+.contact-section{
+    animation:contactAppear 0.8s ease both;
+}
+
+@keyframes contactAppear{
+    from{
+        opacity:0;
+        transform:translateY(35px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Tablet */
+@media(max-width:850px){
+    .contact-section{
+        width:90%;
+        padding:40px 30px;
+    }
+
+    .contact-content{
+        gap:40px;
+    }
+}
+
+/* Mobile */
+@media(max-width:650px){
+    .contact-wrapper{
+        padding:50px 15px;
+    }
+
+    .contact-section{
+        width:100%;
+        padding:32px 20px;
+        border-radius:24px;
+    }
+
+    .contact-section > h2{
+        font-size:34px;
+    }
+
+    .contact-content{
+        grid-template-columns:1fr;
+        gap:38px;
+    }
+
+    .contact-left h3{
+        font-size:25px;
+    }
+
+    .social-links{
+        justify-content:flex-start;
+    }
+
+    .social-link{
+        padding:12px 18px;
+    }
+}
+</style>
+
+
+<section class="contact-wrapper" id="Contact">
+    <div class="contact-section">
+
+        <h2>Let's <span>Connect</span></h2>
+        <div class="contact-underline"></div>
+
+        <div class="contact-content">
+
+            <!-- Left Content -->
+            <div class="contact-left">
+                <h3>Get in touch.</h3>
+
+                <p>
+                    Have a project, an idea, or just want to say hello?
+                    I'm always open to interesting conversations.
+                </p>
+
+                <div class="social-links">
+                    <a href="mailto:youremail@gmail.com" class="social-link">
+                        <i class="fa-solid fa-envelope email-icon"></i>
+                        Email
+                    </a>
+
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-linkedin-in linkedin-icon"></i>
+                        LinkedIn
+                    </a>
+
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+                        Whatsapp
+                    </a>
+
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-facebook-f facebook-icon"></i>
+                        Facebook
+                    </a>
+
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-instagram instagram-icon"></i>
+                        Instagram
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Form -->
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Tell me about your project..." required></textarea>
+
+                <button type="submit">
+                    ✦ Send Message
+                </button>
+            </form>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- Font Awesome (agar pehle add nahi kiya to add kar dein) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+body{
+    margin:0;
+    background:#0b0b0b;
+    font-family:'Inter', sans-serif;
+}
+
+/* Footer */
+.portfolio-footer{
+    width:80%;
+    margin:0 auto;
+    padding:78px 0 28px;
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,0.07);
+}
+
+/* Footer Text */
+.portfolio-footer p{
+    margin:0;
+    color:#817873;
+    font-size:14px;
+    font-weight:400;
+    letter-spacing:0.1px;
+}
+
+/* Name */
+.portfolio-footer .footer-name{
+    color:#f2eee9;
+    font-weight:600;
+}
+
+/* Heart */
+.portfolio-footer .heart{
+    color:#f0445e;
+    font-size:16px;
+    margin:0 3px;
+    display:inline-block;
+    animation:heartBeat 1.4s infinite;
+}
+
+/* Coffee Mug */
+.portfolio-footer .coffee{
+    color:#f5a623;
+    font-size:16px;
+    margin-left:3px;
+    display:inline-block;
+    animation:coffeeMove 2s ease-in-out infinite;
+}
+
+/* Heart Animation */
+@keyframes heartBeat{
+    0%,100%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.25);
+    }
+}
+
+/* Coffee Animation */
+@keyframes coffeeMove{
+    0%,100%{
+        transform:rotate(0deg);
+    }
+    50%{
+        transform:rotate(-10deg);
+    }
+}
+
+/* Mobile */
+@media(max-width:600px){
+    .portfolio-footer{
+        width:90%;
+        padding:55px 0 25px;
+    }
+
+    .portfolio-footer p{
+        font-size:12px;
+        line-height:1.8;
+    }
+}
+</style>
+
+<footer class="portfolio-footer">
+    <p>
+        © 2026 <span class="footer-name">Syed Abdullah Bin Abid</span>
+        · Crafted with
+        <span class="heart"><i class="fa-solid fa-heart"></i></span>
+        and a lot of
+        <span class="coffee"><i class="fa-solid fa-mug-hot"></i></span>.
+    </p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
